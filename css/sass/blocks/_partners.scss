@@ -1,0 +1,34 @@
+.partners {
+    margin: 150px 0 50px 0;
+    background: url('/src/img/background.png');
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+            .item-logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 60%;
+
+                .logo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    .link {
+                        margin-bottom: 80px;
+    
+                        .img {
+                            max-width: 245px;
+                            max-height: 65px;
+                        }
+                    }    
+                }
+            }
+    }
+}

@@ -1,0 +1,88 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    background: url('/src/img/background.png');
+    background-size: cover;
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+
+        .item-img {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            
+            .img {
+                background-size: cover;
+            }
+        }
+
+        .item-content {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .devider {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border: 1px $main-color solid;
+                border-radius: 100%;
+                position: relative;
+                margin: 30px 0;
+                
+                &:nth-child(n+2):after  {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 1px;
+                    background: $main-color;
+                    top: -10px;
+                    transform: rotate(90deg);
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 1px;
+                    background: $main-color;
+                    bottom: -10px;
+                    transform: rotate(90deg);
+                }
+
+                &__number {
+                    color: $main-color;
+                }
+            }
+
+            .text {
+                font-size: 18px;
+                text-align: center;
+                margin: 0;
+                
+            }
+
+        }
+    }
+}

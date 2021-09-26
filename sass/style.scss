@@ -1,0 +1,29 @@
+@import 'libs/bootstrap-reboot.min';
+@font-face {
+    font-family: Pompadur; 
+    src: url(/font/ofont.ru_Calibri.ttf);
+   }
+
+@import 'base/variables';
+@import 'base/mixins';
+
+
+* {
+    font-family: 'Calibri', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+@import 'blocks/nav';
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/descr';
+@import 'blocks/about';
+@import 'blocks/partners';
+@import 'blocks/media';
+
